@@ -5,7 +5,7 @@ import {Link as LinkS} from 'react-scroll'
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
-    /*margin-top: -80px;*/
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,5 +128,8 @@ export const NavBtnLink = styled(LinkR)`
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
+    }
+    @media screen and (min-width:769px) and (max-width: 1044px) {
+        font-size: 0.5rem;
     }
 `
