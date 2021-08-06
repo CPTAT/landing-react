@@ -15,7 +15,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline,darkTe
                                 {topLine}
                             </TopLine>
                             <Heading lightText={lightText}>
-                                <span>C</span>ommercial <span>P</span>roperty <span>T</span>raffic <span>A</span>nalytic <span>T</span>ool
+                                {headline}
                             </Heading>
                             <Subtitle darkText={darkText}>
                                 {description}

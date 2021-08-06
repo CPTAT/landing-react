@@ -69,7 +69,7 @@ export const Heading = styled.h1`
     color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
     
     span {
-        color: #27D184;
+        color: red;
        }
 
     @media screen and (max-width: 480px) {
