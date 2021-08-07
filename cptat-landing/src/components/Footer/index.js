@@ -2,7 +2,7 @@ import React from 'react'
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa'
 import { FooterContainer, FooterWrap} from './FooterElements'
 // import { FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterLinkDescription, FooterLinkLogoItems} from './FooterElements'
-import { SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, Img, Text, Mailto} from './FooterElements'
+import { SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, Img, a} from './FooterElements'
 
 const Footer = () => {
     return (
@@ -56,10 +56,7 @@ const Footer = () => {
                         
                     </SocialMediaWrap>
                 </SocialMedia>
-                <Text href="//mailto:cptat.team@gmail.com">cptat.team@gmail.com</Text>
-                <Mailto email="foo@bar.baz" subject="Hello & Welcome" body="Hello world!">
-                    Mail me!
-                </Mailto>
+                <a href="mailto:cptat.team@gmail.com" className="mail-link">cptat.team@gmail.com</a>
             </FooterWrap>
         </FooterContainer>
     )

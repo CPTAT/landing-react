@@ -156,6 +156,15 @@ export const Text = styled(Link)`
     cursor: pointer;
 `
 
+export const a = styled(Link)`
+    text.align: center;
+    margin-top: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+`
+
 export const Mailto = ({ email, subject = '', body = '', children }) => {
     let params = subject || body ? '?' : '';
     if (subject) params += `subject=${encodeURIComponent(subject)}`;
@@ -163,3 +172,4 @@ export const Mailto = ({ email, subject = '', body = '', children }) => {
   
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
+

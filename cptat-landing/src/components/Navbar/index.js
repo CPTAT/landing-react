@@ -22,7 +22,7 @@ const Navbar = ( {toggle} ) => {
                             <NavLinks to="opportunities">МОЖЛИВОСТІ</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="clients">НАШІ КЛІЕНТИ</NavLinks>
+                            <NavLinks to="clients">НАШІ КЛІЄНТИ</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="algorithm">АЛГОРИТМ РОБОТИ</NavLinks>

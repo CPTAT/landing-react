@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AlgorithmContainer = styled.div`
-    height: 800px;
+    height: 860px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,6 +66,7 @@ export const AlgorithmH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom:64px;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;

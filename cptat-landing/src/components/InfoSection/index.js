@@ -21,7 +21,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline,darkTe
                                 {description}
                             </Subtitle>
                             <BtnWrap>
-                                <Button to="home" primary={primary? 1 : 0}
+                                <Button to="/SignIn" primary={primary? 1 : 0}
                                 smooth={true}
                                 duration={500}
                                 spy={true}

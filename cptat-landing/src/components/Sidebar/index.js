@@ -13,7 +13,7 @@ const Sidebar = ({isOpen, toggle}) => {
                         ПРО НАС
                     </SidebarLink>
                     <SidebarLink to='opportunities' onClick={toggle}>МОЖЛИВОСТІ</SidebarLink>
-                    <SidebarLink to='clients' onClick={toggle}>НАШІ КЛІЕНТИ</SidebarLink>
+                    <SidebarLink to='clients' onClick={toggle}>НАШІ КЛІЄНТИ</SidebarLink>
                     <SidebarLink to='algorithm' onClick={toggle}>АЛГОРИТМ РОБОТИ</SidebarLink>
                     <SidebarLink to='examples' onClick={toggle}>ПРИКЛАДИ</SidebarLink>
                     <SidebarLink to='team' onClick={toggle}>КОМАНДА</SidebarLink>
