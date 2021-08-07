@@ -8,6 +8,7 @@ import Algorithm from '../components/AlgorithmSection';
 import Footer from '../components/Footer';
 import Example from '../ExamplesSection';
 import { SliderData } from '../ExamplesSection/ExamplesData'
+import TeamSection from '../components/TeamSection';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -25,6 +26,7 @@ const Home = () => {
         <InfoSection {...homeObjOne} />
         <Algorithm />
         <Example slides={SliderData}/>
+        <TeamSection />
         <InfoSection {...homeObjTwo} />
         <Footer />
 

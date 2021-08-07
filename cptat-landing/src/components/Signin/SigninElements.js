@@ -83,6 +83,7 @@ export const FormLabel = styled.label`
     margin-bottom: 8px;
     font-size: 14px;
     color: #fff;
+    text-align: center;
 
 `;
 
@@ -104,7 +105,7 @@ export const FormButton = styled.button`
 `
 
 export const Text = styled.span`
-    text.align: center;
+    text-align: center;
     margin-top: 24px;
     color: #fff;
     font-size: 14px;
