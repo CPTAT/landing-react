@@ -78,7 +78,7 @@
 .right-arrow{
   font-size: 3rem;
   color: #27D184;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
   user-select: none;
 }
@@ -86,7 +86,7 @@
 .left-arrow{
   font-size: 3rem;
   color:#27D184;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
   user-select: none;
 }
