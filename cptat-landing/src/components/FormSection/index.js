@@ -8,7 +8,7 @@ const FormSection = () => {
                <FormContent>
                    <Form action="#">
                        <FormH1>Залиште контакти</FormH1>
-                       <FormH2>І ми з вами неодмінно зв’яжемось</FormH2>
+                       <FormH2>І ми з вами неодмінно зв’яжемося</FormH2>
                        <FormLabel htmlFor='for'></FormLabel>
                        <FormInput type='name' placeholder="Ваше ім'я" required />
                        <FormInput type='email' placeholder="E-mail" required />
