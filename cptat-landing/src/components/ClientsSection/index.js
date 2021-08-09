@@ -9,9 +9,9 @@ const InfoSection = ({lightBg, imgStart, lightText,darkText,buttonLabel, primary
     return (
         <>
         <InfoContainer lightBg={lightBg} id="clients">
-        <ClientH1>CPTAT буде корисний</ClientH1>
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
+                <ClientH1>CPTAT буде корисний</ClientH1>
                     <Column1>
                         <TextWrapper>
                         <ClientIcon src={Icon1}/>

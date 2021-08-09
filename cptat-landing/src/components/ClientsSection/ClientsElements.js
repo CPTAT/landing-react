@@ -16,11 +16,14 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: flex;
     width: 100%;
+    height:100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    align-content: center;
+    align-items: center;
 
 `
 
@@ -29,6 +32,7 @@ export const InfoRow = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    // margin-top: 100px;
 `
 
 export const Column1 = styled.div`
@@ -126,6 +130,7 @@ export const ClientIcon = styled.img`
 `
 
 export const ClientH1 = styled.h1`
+    flex-basis: 100%;
     padding-top: 20px;
     margin-bottom: 20px;
     font-size: 2.5rem;
