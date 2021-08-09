@@ -3,16 +3,18 @@ import styled from 'styled-components';
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : "#010606")};
-    
+    height: 860px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        height:1200px;
     }
 `
 
 export const InfoWrapper = styled.div`
-    display: grid;
-    z-index: 1;
-    height: 860px;
+    display: flex;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -23,32 +25,39 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoRow = styled.div`
-    display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
-
-    @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-    }
+    justify-content: center;
 `
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    grid-area: col1;
+    flex-basis: 50%;
+    margin-top: 100px;
+    @media screen and (max-width: 768px) {
+        flex-basis: 100%;
+    }
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
-    grid-area: col2;
+    flex-basis: 50%;
+    margin-top: 100px;
+    @media screen and (max-width: 768px) {
+        flex-basis: 100%;
+        margin-top: 0px;
+    }
 `
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `
 
 export const TopLine = styled.p`
@@ -59,17 +68,19 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    text-align: center;
+    
 `
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1.1;
     font-weight: 600;
     color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
-    
+    text-align: center;
     span {
-        color: red;
+        color: #27D184;
        }
 
     @media screen and (max-width: 480px) {
@@ -82,13 +93,15 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
     color: ${({darkText}) => (darkText ? '#010606' : "#fff")};
-
+    margin-left: auto;
+    margin-right: auto;
 `
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start; 
+    justify-content: center; 
 `
 
 export const ImgWrap = styled.div`
@@ -100,4 +113,26 @@ export const Img =styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+`
+
+export const ClientIcon = styled.img`
+    height: 160px;
+    width: 160px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+`
+
+export const ClientH1 = styled.h1`
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
+    }
 `

@@ -1,49 +1,38 @@
 import React from 'react';
-import { Button } from '../ButtonElement';
+import Icon1 from '../../images/opp-1.svg';
+import Icon2 from '../../images/opp-2.svg';
+import Icon3 from '../../images/opp-3.svg';
+import Icon4 from '../../images/opp-4.svg';
+import {OpportunitiesContainer, OpportunitiesH1, OpportunitiesWrapper, OpportunitiesCard, OpportunitiesIcon, OpportunitiesH2, OpportunitiesP} from './OpportunitiesElements';
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements';
-
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline,darkText,description,buttonLabel, img, alt, primary, dark, dark2}) => {
+const Opportunities = () => {
     return (
-        <>
-        <InfoContainer lightBg={lightBg} id={id}>
-            <InfoWrapper>
-                <InfoRow imgStart={imgStart}>
-                    <Column1>
-                        <TextWrapper>
-                            <TopLine>
-                                {topLine}
-                            </TopLine>
-                            <Heading lightText={lightText}>
-                                {headline}
-                            </Heading>
-                            <Subtitle darkText={darkText}>
-                                {description}
-                            </Subtitle>
-                            <BtnWrap>
-                                <Button to="home" primary={primary? 1 : 0}
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                                offset={-80}
-                                dark={dark ? 1 : 0}
-                                dark2={dark2 ? 1 : 0}
-                                
-                                >{buttonLabel}</Button>
-                            </BtnWrap>
-                        </TextWrapper>
-                    </Column1>
-                    <Column2>
-                        <ImgWrap>
-                            <Img src={img} alt={alt} />
-                        </ImgWrap>
-                    </Column2>
-                </InfoRow>
-            </InfoWrapper>
-        </InfoContainer>
-        </>
-    );
-};
+        <OpportunitiesContainer id="opportunities">
+           <OpportunitiesH1>Можливості CPTAT</OpportunitiesH1>
+           <OpportunitiesWrapper>
+                <OpportunitiesCard>
+                    <OpportunitiesIcon src={Icon1}/>
+                    <OpportunitiesH2>Точно визначає трафік у певній локації</OpportunitiesH2> 
+                    <OpportunitiesP>Кожен перехожий є потенційним клієнтом, тому важливо перевірити трафік до вибору приміщення</OpportunitiesP>
+                </OpportunitiesCard> 
+                <OpportunitiesCard>
+                    <OpportunitiesIcon src={Icon2}/>
+                    <OpportunitiesH2> Полегшує пошук приміщення для ведення бізнесу</OpportunitiesH2> 
+                    <OpportunitiesP> Підбір Кількох найоптимальніших локацій персонально для вашого бізнесу</OpportunitiesP>
+                </OpportunitiesCard> 
+                <OpportunitiesCard>
+                    <OpportunitiesIcon src={Icon3}/>
+                    <OpportunitiesH2>Надає економічну аналітику місця у формі звіту</OpportunitiesH2> 
+                    <OpportunitiesP> Тижневі та добові піки перехожих, конкурентні заклади поблизу, прогнози щодо кількості відвідувачів та виручки</OpportunitiesP>
+                </OpportunitiesCard>
+                <OpportunitiesCard>
+                    <OpportunitiesIcon src={Icon4}/>
+                    <OpportunitiesH2>Збільшує привабливість нерухомості</OpportunitiesH2> 
+                    <OpportunitiesP>Ринкова вартість комерційної нерухомості зростає, за рахунок підтвердженної аналітики трафіку</OpportunitiesP>
+                </OpportunitiesCard>   
+            </OpportunitiesWrapper> 
+        </OpportunitiesContainer>
+    )
+}
 
-export default InfoSection;
+export default Opportunities

@@ -6,7 +6,7 @@ export const TeamContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #27D184;
+    background: #000;
 
     @media screen and (max-width: 768px) {
         height: 1200px;
@@ -82,10 +82,11 @@ export const TeamH1 = styled.h1`
 export const TeamH2 = styled.h2`
     font-size: 0.8rem;
     margin-bottom: 10px;
-
+    color: #fff;
 `
 
 export const TeamP = styled.p`
     font-size: 1rem;
     text-align: center;
+    color: #fff;
 `
