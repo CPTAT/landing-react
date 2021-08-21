@@ -6,8 +6,8 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne} from '../components/InfoSection/Data';
 import Algorithm from '../components/AlgorithmSection';
 import Footer from '../components/Footer';
-import Example from '../ExamplesSection';
-import { SliderData } from '../ExamplesSection/ExamplesData'
+import Example from '../components/ExamplesSection';
+import { SliderData } from '../components/ExamplesSection/ExamplesData'
 import TeamSection from '../components/TeamSection';
 import FormSection from '../components/FormSection';
 import OpportunitiesSection from '../components/OpportunitiesSection';
