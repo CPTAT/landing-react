@@ -28,7 +28,7 @@ jobs:
       run: |
         git config --global user.name "recruitabx"
         git config --global user.email "recruitabx@gmail.com"
-        git clone https://github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
+        git clone https://recruitabx:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
         rm -rf gh-pages/*
         cp -r build/* gh-pages
         cd gh-pages
