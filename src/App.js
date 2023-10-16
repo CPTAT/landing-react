@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/landing-react" component={Home} exact />
+        <Route path="/" component={Home} exact /> {/* Adjust the path for Home */}
         <Route path="/signin" component={SigninPage} exact />
         <Route path="/wakemydyno.txt" component={SigninPage} exact />
       </Switch>
