@@ -5,7 +5,7 @@ const SignIn = () => {
     return (
        <Container>
            <FormWrap>
-               <Icon to="/">CPTAT</Icon>
+               <Icon to="/landing-react">CPTAT</Icon>
                <FormContent>
                    <Form action="#">
                        <FormH1>Вхід у кабінет</FormH1>

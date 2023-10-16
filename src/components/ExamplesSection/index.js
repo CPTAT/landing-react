@@ -31,10 +31,22 @@ const Example = ({ slides }) => {
                 {SliderData.map((slide, index) => {
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                            {index === current && (<video src={slide.video} alt="video examples" className="video-slider" webkit-playsinline playsinline  muted autoPlay="autoPlay" defaultMuted loop />)} 
+                            {index === current && (
+                                <video
+                                    src={slide.video}
+                                    alt="video examples"
+                                    className="video-slider"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    webkit-playsinline="true"
+                                />
+                            )}
                         </div>
-                    )
+                    );
                 })}
+
                 </section>
                 <FaArrowAltCircleRight className="right-arrow"  onClick={nextSlide} />
             </ExampleWrapper>

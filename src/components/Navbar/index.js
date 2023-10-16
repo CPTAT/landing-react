@@ -25,33 +25,33 @@ const Navbar = ( {toggle} ) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={toggleHome}>
-                        <Img src = './logo.png' />
+                    <NavLogo to='/landing-react' onClick={toggleHome}>
+                        <Img src = {process.env.PUBLIC_URL + '/logo.png'} alt = 'CPTAT'/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about"  smooth={true} duration={500} spy={true} offset={-80} exact={true}>ПРО НАС</NavLinks>
+                            <NavLinks to="about"  smooth={true} duration={500} spy="true" offset={-80} exact="true">ПРО НАС</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="opportunities" smooth={true} duration={500} spy={true} offset={-80} exact={true}>МОЖЛИВОСТІ</NavLinks>
+                            <NavLinks to="opportunities" smooth={true} duration={500} spy="true" offset={-80} exact="true">МОЖЛИВОСТІ</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="clients" smooth={true} duration={500} spy={true} offset={-80} exact={true}>НАШІ КЛІЄНТИ</NavLinks>
+                            <NavLinks to="clients" smooth={true} duration={500} spy="true" offset={-80} exact="true">НАШІ КЛІЄНТИ</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="algorithm" smooth={true} duration={500} spy={true} offset={-80} exact={true}>АЛГОРИТМ РОБОТИ</NavLinks>
+                            <NavLinks to="algorithm" smooth={true} duration={500} spy="true" offset={-80} exact="true">АЛГОРИТМ РОБОТИ</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="examples" smooth={true} duration={500} spy={true} offset={-80} exact={true}>ПРИКЛАДИ</NavLinks>
+                            <NavLinks to="examples" smooth={true} duration={500} spy="true" offset={-80} exact="true">ПРИКЛАДИ</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="team" smooth={true} duration={500} spy={true} offset={-80} exact={true}>КОМАНДА</NavLinks>
+                            <NavLinks to="team" smooth={true} duration={500} spy="true" offset={-80} exact="true">КОМАНДА</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contacts" smooth={true} duration={500} spy={true} offset={-80} exact={true}>КОНТАКТИ</NavLinks>
+                            <NavLinks to="contacts" smooth={true} duration={500} spy="true" offset={-80} exact="true">КОНТАКТИ</NavLinks>
                         </NavItem>
                         {/* <NavItem>
                             <NavLinksLast to="signup">ВХІД У КАБІНЕТ</NavLinksLast>
