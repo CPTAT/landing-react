@@ -31,7 +31,7 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/'>
-                        <Img src = './logo.png' />
+                        <Img src={process.env.PUBLIC_URL + '/logo.png'} />
                         </SocialLogo>
                         <WebsiteRights>
                             CPTAT © {new Date().getFullYear()}  Всі права захищені.
